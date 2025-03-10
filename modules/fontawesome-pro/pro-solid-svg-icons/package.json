@@ -1,0 +1,58 @@
+{
+  "description": "The iconic font, CSS, and SVG framework",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "author": "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaiqueR/pro-solid-svg-icons"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "6.5.2"
+  },
+  "version": "6.5.0",
+  "name": "@caiquer/pro-solid-svg-icons",
+  "main": "index.js",
+  "module": "index.mjs",
+  "jsnext:main": "index.mjs",
+  "license": "UNLICENSED",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./*": "./*.js"
+  },
+  "scripts": {
+    "postinstall": "node attribution.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
